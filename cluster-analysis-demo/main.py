@@ -6,6 +6,7 @@ from utils.src.dir_support import files_number_in_directory
 from distances import distances
 from clustering import clustering
 
+
 dir_basket = Path.cwd() / 'BASKET'
 n_objects = files_number_in_directory(dir_basket)
 

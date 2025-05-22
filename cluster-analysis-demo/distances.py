@@ -33,17 +33,14 @@ def distances(dir_basket):
         j = temp[0]
         i = temp[1]
 
-        path_j = list_basket_paths[j]
-        path_i = list_basket_paths[i]
-
-        with open(path_j, 'r') as file:
+        with open(list_basket_paths[j], 'r') as file:
             for line in file:
                 coord_str = line.strip()
                 x_str, y_str = coord_str.split(' ')
                 x1 = float(x_str)
                 y1 = float(y_str)
 
-        with open(path_i, 'r') as file:
+        with open(list_basket_paths[i], 'r') as file:
             for line in file:
                 coord_str = line.strip()
                 x_str, y_str = coord_str.split(' ')
