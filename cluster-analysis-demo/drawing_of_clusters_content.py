@@ -1,4 +1,4 @@
-# Jun-02-2025
+# Jun-10-2025
 # drawing_of_clusters_content.py
 
 import numpy as np
@@ -8,7 +8,7 @@ from pathlib import Path
 from utils.src.dir_support import read_directory_data, get_subdirectories
 
 
-def drawing_of_clusters_content(all_points):
+def drawing_of_clusters_content(number_of_clusters, all_points):
 
     list_cluster_numbers, list_all_points = get_clusters_content()
 
@@ -69,7 +69,8 @@ def drawing_of_clusters_content(all_points):
         plt.yticks(np.arange(0, 9, 0.5))
         plt.grid(True, which='both', linestyle='--', linewidth=0.4)
 
-        ax.set_title('CLUSTERS (distinguished by the points color)', fontsize=9)
+        title = str(number_of_clusters) + ' CLUSTERS (distinguished by the points color)'
+        ax.set_title(title, fontsize=9)
         ax.axis('equal')
 
         plt.savefig("PLOT_CLUSTERS.png", dpi=150, bbox_inches='tight')

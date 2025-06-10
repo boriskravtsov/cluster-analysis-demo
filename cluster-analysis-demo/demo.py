@@ -1,4 +1,4 @@
-# Jun-02-2025
+# Jun-10-2025
 # demo.py
 
 """
@@ -31,7 +31,7 @@ def main():
                number_of_clusters)
 
     all_points = drawing_of_basket_content(dir_basket)
-    drawing_of_clusters_content(all_points)
+    drawing_of_clusters_content(number_of_clusters, all_points)
 
 
 if __name__ == "__main__":
